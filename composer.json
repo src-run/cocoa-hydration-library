@@ -1,0 +1,52 @@
+{
+  "name": "src-run/cocoa-hydration-library",
+  "license": "MIT",
+  "type": "library",
+  "homepage": "https://src.run/cocoa-hydration-library",
+  "description": "Simple reflection-based object hydration implementation.",
+  "support": {
+    "email": "rmf@src.run",
+    "issues": "https://src.run/cocoa-hydration-library/issues",
+    "source": "https://src.run/cocoa-hydration-library/git"
+  },
+  "keywords": [ "cocoa-hydration-library", "eggdictator", "exception", "library", "rmf", "src-run" ],
+  "authors": [
+    {
+      "name": "Rob Frawley 2nd",
+      "email": "rmf@src.run",
+      "homepage": "https://src.run/rmf",
+      "role": "Project Lead"
+    }
+  ],
+  "require": {
+    "php": "~7.0",
+    "src-run/augustus-exception-library": "~0.7"
+  },
+  "require-dev": {
+    "codacy/coverage": "~1.0",
+    "friendsofphp/php-cs-fixer": "~2.0",
+    "phpunit/phpunit": "~5.4",
+    "satooshi/php-coveralls": "~1.0",
+    "sllh/php-cs-fixer-styleci-bridge": "~2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "SR\\Cocoa\\Hydration\\": "lib/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SR\\Cocoa\\Hydration\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "bin-dir": "bin"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.7-dev"
+    }
+  }
+}
